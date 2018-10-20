@@ -54,5 +54,6 @@ for i in range(0,75):
         result.append(likelihood )
         key = ['setosa', 'versicolor', 'virginica']
         iris = dict(zip(key,result))
+    # cetak jenis iris dengan posterior terbesar
     print(i+1, max(iris.items(), key=operator.itemgetter(1))[0])
 
